@@ -86,7 +86,7 @@ class TaskController extends Controller
                 ['id' => $request->input('id'), 'user_id' => Auth::user()->id],
                 [
                     'title' => $request->input('title'),
-                    'description' => $request->input('description')== null ? "Sin descripción" : $request->input('description'),
+                    'description' => $request->input('description') == null ? "Sin descripción" : $request->input('description'),
                     'due_date' => $request->input('due_date'),
                     'completed' => $isCompleted,
                 ]
