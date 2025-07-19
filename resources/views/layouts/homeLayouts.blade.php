@@ -6,6 +6,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Todo List - Organiza tus tareas diarias de manera eficiente.">
+    <meta name="keywords" content="Todo List, tareas, productividad, organización">
+    <meta name="author" content="Angel Jesus Linarez Martinez">
+    <meta name="copyright" content="© 2025 Angel Jesus Linarez Martinez">
     <title>Todo List</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="{{asset('icons/lists.svg')}}" type="image/x-icon">
