@@ -31,7 +31,7 @@ class CreateTask extends Component
         
         Task::create([
             'title' => $this->title,
-            'description' => $this->description ?? "Sin descripción",
+            'description' => $this->description == null ? "Sin descripción" : $this->description,
             'due_date' => $this->due_date,
             'user_id' => Auth::id()
         ]);
