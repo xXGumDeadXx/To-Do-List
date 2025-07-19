@@ -33,7 +33,7 @@
                 wire:model="due_date"
                 id="due_date"
                 min="{{ now()->format('Y-m-d') }}"
-                class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 shadow-sm focus:border-amber-500 focus:ring-amber-500 dark:bg-gray-900 dark:text-gray-100 p-3 max-w-min"
+                class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 shadow-sm focus:border-amber-500 focus:ring-amber-500 dark:bg-gray-900 dark:text-gray-100 p-3 md:max-w-min"
             >
             @error('due_date') <span class="text-red-500 text-xs">{{ $message }}</span> @enderror
         </div>

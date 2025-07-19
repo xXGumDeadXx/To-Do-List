@@ -1,9 +1,9 @@
-<div class="space-y-2 w-full">
-    <h3 class="font-medium text-lg dark:text-gray-100 mb-7">Tareas próximas (próximos 3 días)</h3>
-    <div class="flex flex-col md:flex-row gap-10 overflow-x-auto justify-center">
+<div class="space-y-2 w-full ">
+    <h3 class="font-medium text-lg dark:text-gray-100 my-7">Tareas próximas (próximos 3 días)</h3>
+    <div class="flex flex-col md:flex-row gap-10 justify-center">
         @forelse($upcomingTasks as $task)
             <article 
-                class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 flex flex-col gap-3 border-l-4 overflow-hidden min-w-md md:max-w-md {{ $task->completed ? 'border-green-400' : 'border-yellow-400' }}"
+                class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 flex flex-col gap-3 border-l-4 overflow-hidden md:min-w-md md:max-w-md {{ $task->completed ? 'border-green-400' : 'border-yellow-400' }}"
                 aria-labelledby="tarea-title-{{$task->id}}" 
                 wire:key="task-{{$task->id}}"
             >
