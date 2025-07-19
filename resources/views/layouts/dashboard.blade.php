@@ -1,4 +1,4 @@
-@vite(['resources/css/app.css', 'resorces/js/app.js'])
+@vite(['resources/css/app.css', 'resources/js/app.js'])
 @livewireStyles
 <!DOCTYPE html>
 <html lang="es">
