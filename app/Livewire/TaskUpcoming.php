@@ -18,7 +18,8 @@ class TaskUpcoming extends Component
     {
         $this->upcomingTasks = Task::where('user_id', auth()->id())
             ->where('completed', false)
-            ->whereBetween('due_date', [now(), now()->addDays(3)])
+            ->whereDate('due_date', '>=', now()->startOfDay())
+            ->whereDate('due_date', '<=', now()->addDays(3)->endOfDay())
             ->orderBy('due_date', 'asc')
             ->get();
     }
