@@ -31,9 +31,9 @@
         <p class="text-red-500 text-lg text-center font-bold mb-4">{{ $errorMessage }}</p>
     @endif
     <div class="flex justify-around">
-        <button type="submit"
-            class="bg-linear-60 to-amber-600 from-amber-400 text-white px-4 py-2 rounded cursor-pointer">
-            Entrar
+        <button type="submit" class="bg-linear-60 to-amber-600 from-amber-400 text-white px-4 py-2 rounded hover:bgambere-700 dark:hover:bg-amber-600 cursor-pointer" wire:loading.attr="disabled" wire:target="register">
+            <span wire:loading.remove wire:target="register">Entrar</span>
+            <span wire:loading wire:target="register">Cargando...</span>
         </button>
     </div>
 </form>

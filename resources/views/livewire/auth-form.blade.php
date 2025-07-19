@@ -1,4 +1,4 @@
-<div class="md:fixed inset-0 flex items-center justify-center z-50 pt-10 md:pt-0">
+<div class="md:fixed inset-0 flex items-center justify-center z-50 pt-10 md:pt-0 animate-fade-in-up">
     <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg w-screen md:w-md p-6">
         @if($showRegister)
         <h2 class="text-2xl font-bold mb-4 text-center text-gray-900 dark:text-white">Registrase</h2>
@@ -28,3 +28,17 @@
         @endif
     </div>
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter') {
+                // Busca el formulario visible (login o register)
+                let form = document.querySelector('form:is(:not([style*="display: none"]))');
+                if (form) {
+                    e.preventDefault();
+                    form.dispatchEvent(new Event('submit', { cancelable: true, bubbles: true }));
+                }
+            }
+        });
+    });
+</script>
