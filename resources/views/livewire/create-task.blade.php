@@ -51,3 +51,13 @@
         </div>
     </form>
 </div>
+@script
+    <script>
+        $wire.on('taskCreated', () => {
+            scrollBy({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+@endscript

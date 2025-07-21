@@ -2,7 +2,7 @@
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     @if(!$tasks->isEmpty())
         @foreach($tasks as $task)
-            <article class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 flex flex-col gap-3 border-l-4 overflow-hidden {{ 
+            <article class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 flex flex-col gap-3 border-l-4 overflow-hidden animate-show-task {{ 
                 $task->completed ? 'border-green-400' : 
                 (!$task->completed && $task->due_date < date('Y-m-d') ? 'border-red-400' : 'border-yellow-400') 
             }}" aria-labelledby="tarea1-title" wire:key="task-{{$task->id}}">

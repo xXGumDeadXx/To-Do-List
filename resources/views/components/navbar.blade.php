@@ -1,4 +1,4 @@
-<header class="bg-white shadow dark:bg-gray-800">
+<header class="bg-white shadow dark:bg-gray-800 sticky top-0 left-0 w-full z-50">
     <div class="container mx-auto px-4 py-6 flex justify-center md:justify-between items-center">
         <h1 class="text-2xl font-bold text-gray-800 dark:text-gray-100 hidden md:block">Todo List</h1>
         <nav class="flex items-center space-x-2">

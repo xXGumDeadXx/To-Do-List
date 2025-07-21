@@ -14,18 +14,18 @@
                 No tienes cuenta?
                 <button wire:click="toggleAuth" class="text-amber-600 dark:text-amber-400 underline cursor-pointer">Registrarse</button>
             </p>
-            <div class="flex items-center my-4">
-                <hr class="flex-grow border-t border-gray-300 dark:border-gray-700">
-                <span class="mx-2 text-gray-500 dark:text-gray-400">o</span>
-                <hr class="flex-grow border-t border-gray-300 dark:border-gray-700">
-            </div>
-            <div class="flex justify-center">
-                <a href="{{route('google.login')}}" class="flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors ease-in">
-                    @include('components.google')
-                    Iniciar sesión con Google
-                </a>
-            </div>
         @endif
+         <div class="flex items-center my-4">
+            <hr class="flex-grow border-t border-gray-300 dark:border-gray-700">
+            <span class="mx-2 text-gray-500 dark:text-gray-400">o</span>
+            <hr class="flex-grow border-t border-gray-300 dark:border-gray-700">
+        </div>
+        <div class="flex justify-center">
+            <a href="{{route('google.login')}}" class="flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors ease-in">
+                @include('components.google')
+                Iniciar sesión con Google
+            </a>
+        </div>
     </div>
 </div>
 <script>

@@ -11,6 +11,35 @@
 
     --animate-fade-in-up: fade-in-up 1s ease-in-out both;
 
+    --animate-show-task: show-task .7s ease-in-out both;
+
+    --animate-hidden-task: hidden-task .7s ease-in-out both;
+
+    @keyframes hidden-task{
+        0% {
+            opacity: 1;
+            transform: scale(1);
+        }
+        99% {
+            opacity: 0;
+            transform: scale(0.1);
+        }
+        100% {
+            display: none;
+        }
+    }
+
+    @keyframes show-task{
+        0% {
+            opacity: 0;
+            transform: scale(0.5);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
     @keyframes fade-in-up{
         0% {
             opacity: 0;
